@@ -1,0 +1,145 @@
+ncverilog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s086: Started on Jul 26, 2024 at 14:44:56 IST
+ncverilog
+	+acess+rwc
+	FIFO_design.sv
+	FIFO_design_TB.sv
+ncverilog: *W,FILOD: The file /root/RTL_code_abhishek_kumar/FIFO/cds.lib is out of date, the exec ncvlog will be re-invoked.
+file: FIFO_design_TB.sv
+      endfunction; 
+                 |
+ncvlog: *W,UEXPSC (FIFO_design_TB.sv,31|17): Ignored unexpected semicolon following SystemVerilog description keyword (endfunction).
+      endfunction; 
+                 |
+ncvlog: *W,UEXPSC (FIFO_design_TB.sv,53|17): Ignored unexpected semicolon following SystemVerilog description keyword (endfunction).
+      endfunction;
+                 |
+ncvlog: *W,UEXPSC (FIFO_design_TB.sv,114|17): Ignored unexpected semicolon following SystemVerilog description keyword (endfunction).
+      endfunction;
+                 |
+ncvlog: *W,UEXPSC (FIFO_design_TB.sv,150|17): Ignored unexpected semicolon following SystemVerilog description keyword (endfunction).
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+      FIFO dut (fif.clock, fif.rst, fif.wr, fif.rd, fif.data_in, fif.data_out, fif.empty, fif.full);
+                                                              |
+ncelab: *W,CUVMPW (./FIFO_design_TB.sv,252|62): port sizes differ in port connection (8/1).
+      FIFO dut (fif.clock, fif.rst, fif.wr, fif.rd, fif.data_in, fif.data_out, fif.empty, fif.full);
+                                                                            |
+ncelab: *W,CUVMPW (./FIFO_design_TB.sv,252|76): port sizes differ in port connection (8/1).
+      FIFO dut (fif.clock, fif.rst, fif.wr, fif.rd, fif.data_in, fif.data_out, fif.empty, fif.full);
+                                                                                       |
+ncelab: *W,CUVMPW (./FIFO_design_TB.sv,252|87): port sizes differ in port connection (1/8).
+      FIFO dut (fif.clock, fif.rst, fif.wr, fif.rd, fif.data_in, fif.data_out, fif.empty, fif.full);
+                                                                                                 |
+ncelab: *W,CUVMPW (./FIFO_design_TB.sv,252|97): port sizes differ in port connection (1/8).
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    2       2
+		Interfaces:                 1       1
+		Registers:                 44      73
+		Scalar wires:               8       -
+		Vectored wires:             3       -
+		Named events:               0       4
+		Always blocks:              2       2
+		Initial blocks:             6       6
+		Parallel blocks:            1       1
+		Cont. assignments:          1       2
+		Pseudo assignments:         8       8
+		Assertions:                 1       1
+		Compilation units:          1       1
+		SV Class declarations:      6       6
+		SV Class specializations:   6       6
+	Writing initial simulation snapshot: worklib.tb:sv
+Loading snapshot worklib.tb:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./FIFO_design_TB.sv, line = 270, pos = 16
+           Scope: tb
+            Time: 0 FS + 0
+
+[DRV] : DUT Reset Done
+------------------------------------------
+[GEN] : Oper : 1 iteration : 1
+[DRV] : DATA WRITE  data : 6
+[MON] : Wr:1 rd:0 din:6 dout:0 full:0 empty:0
+[SCO] : Wr:1 rd:0 din:6 dout:0 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :6
+--------------------------------------
+[GEN] : Oper : 1 iteration : 2
+[DRV] : DATA WRITE  data : 3
+[MON] : Wr:1 rd:0 din:3 dout:0 full:0 empty:0
+[SCO] : Wr:1 rd:0 din:3 dout:0 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :3
+--------------------------------------
+[GEN] : Oper : 0 iteration : 3
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:3 dout:0 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:3 dout:0 full:0 empty:0
+ncsim: *E,ERRSEV (./FIFO_design_TB.sv,175): (time 270 NS).
+$unit_0x4d9d137d.scoreboard.run
+[SCO] : DATA MISMATCH
+--------------------------------------
+[GEN] : Oper : 1 iteration : 4
+[DRV] : DATA WRITE  data : 5
+[MON] : Wr:1 rd:0 din:5 dout:0 full:0 empty:0
+[SCO] : Wr:1 rd:0 din:5 dout:0 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :5
+--------------------------------------
+[GEN] : Oper : 1 iteration : 5
+[DRV] : DATA WRITE  data : 9
+[MON] : Wr:1 rd:0 din:9 dout:0 full:0 empty:0
+[SCO] : Wr:1 rd:0 din:9 dout:0 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :9
+--------------------------------------
+[GEN] : Oper : 1 iteration : 6
+[DRV] : DATA WRITE  data : 4
+[MON] : Wr:1 rd:0 din:4 dout:0 full:0 empty:0
+[SCO] : Wr:1 rd:0 din:4 dout:0 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :4
+--------------------------------------
+[GEN] : Oper : 0 iteration : 7
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:4 dout:0 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:4 dout:0 full:0 empty:0
+ncsim: *E,ERRSEV (./FIFO_design_TB.sv,175): (time 510 NS).
+$unit_0x4d9d137d.scoreboard.run
+[SCO] : DATA MISMATCH
+--------------------------------------
+[GEN] : Oper : 1 iteration : 8
+[DRV] : DATA WRITE  data : 2
+[MON] : Wr:1 rd:0 din:2 dout:0 full:0 empty:0
+[SCO] : Wr:1 rd:0 din:2 dout:0 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :2
+--------------------------------------
+[GEN] : Oper : 0 iteration : 9
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:2 dout:0 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:2 dout:0 full:0 empty:0
+ncsim: *E,ERRSEV (./FIFO_design_TB.sv,175): (time 630 NS).
+$unit_0x4d9d137d.scoreboard.run
+[SCO] : DATA MISMATCH
+--------------------------------------
+[GEN] : Oper : 0 iteration : 10
+[DRV] : DATA READ
+[MON] : Wr:0 rd:1 din:2 dout:0 full:0 empty:0
+[SCO] : Wr:0 rd:1 din:2 dout:0 full:0 empty:0
+ncsim: *E,ERRSEV (./FIFO_design_TB.sv,175): (time 690 NS).
+$unit_0x4d9d137d.scoreboard.run
+[SCO] : DATA MISMATCH
+--------------------------------------
+---------------------------------------------
+Error Count :4
+---------------------------------------------
+Simulation complete via $finish(1) at time 690 NS + 1
+./FIFO_design_TB.sv:237         $finish();
+ncsim> exit
+TOOL:	ncverilog	15.20-s086: Exiting on Jul 26, 2024 at 14:44:58 IST  (total: 00:00:02)

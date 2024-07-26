@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jul 25 16:01:40 2024
+# Process ID: 12224
+# Current directory: G:/project_placemenet/booth_mul/booth_mul.runs/synth_1
+# Command line: vivado.exe -log array_multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source array_multiplier.tcl
+# Log file: G:/project_placemenet/booth_mul/booth_mul.runs/synth_1/array_multiplier.vds
+# Journal file: G:/project_placemenet/booth_mul/booth_mul.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source array_multiplier.tcl -notrace

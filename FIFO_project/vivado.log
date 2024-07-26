@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Mar 30 15:27:35 2024
+# Process ID: 8160
+# Current directory: G:/FIFO_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15028 G:\FIFO_project\FIFO_project.xpr
+# Log file: G:/FIFO_project/vivado.log
+# Journal file: G:/FIFO_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/FIFO_project/FIFO_project.xpr
+INFO: [Project 1-313] Project file moved from 'D:/FIFO_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 856.578 ; gain = 121.777
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 30 15:28:10 2024...

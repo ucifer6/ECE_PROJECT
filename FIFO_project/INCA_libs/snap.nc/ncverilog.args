@@ -1,0 +1,7 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++acess+rwc
+FIFO_design.sv
+FIFO_design_TB.sv
